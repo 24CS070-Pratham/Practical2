@@ -1,0 +1,108 @@
+/* attendance.css */
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background: #f9fafc;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* University Logo */
+img {
+  margin-bottom: 15px;
+}
+
+/* Page Title */
+h1 {
+  font-size: 2rem;
+  color: darkred;
+  margin: 10px 0;
+  letter-spacing: 2px;
+}
+
+/* Table Styling */
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th,
+table td {
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background: #f2f2f2;
+  font-size: 1.1rem;
+}
+
+table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Attendance Highlight */
+td:nth-child(2) {
+  font-weight: bold;
+  text-align: center;
+}
+
+td:nth-child(2):before {
+  content: "📊 ";
+}
+
+/* Back to Dashboard Link */
+a {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #0073e6;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: darkred;
+  transform: scale(1.05);
+}
+
+/* Footer (Last Updated) */
+.footer {
+  margin-top: 25px;
+  font-size: 0.85rem;
+  color: gray;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+/* Optional Dark Mode (future toggle) */
+body.dark {
+  background: #1e1e1e;
+  color: #eaeaea;
+}
+
+body.dark table th {
+  background: #333;
+  color: #f9f9f9;
+}
+
+body.dark table td {
+  border-color: #555;
+}
+
+body.dark a {
+  color: #4da6ff;
+}
